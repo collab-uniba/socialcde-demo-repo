@@ -5,4 +5,4 @@ Fake repository for running SocialCDE demos. For more info about the project its
 or https://github.com/collab-uniba/socialcde4eclipse
 
 * In the main branch go Alice's contributions with good UI solutions.
-* In bob's branch go Bob's contributions with poor UI solutions.
+* In Bob's branch go Bob's contributions with poor UI solutions.
