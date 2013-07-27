@@ -51,68 +51,79 @@
                             android:layout_height="279dp"
                             android:orientation="vertical" >
 
-                            <SeekBar
-                                android:id="@+id/seekBar1"
-                                style="@style/android:Widget.SeekBar"
+                            <Spinner
+                                android:id="@+id/spSpeed"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentBottom="true"
-                                android:layout_alignParentRight="true"
-                                android:layout_marginBottom="49dp"
-                                android:minWidth="150dp"
-                                android:progress="25" />
+                                android:layout_alignBaseline="@+id/textView1"
+                                android:layout_alignParentRight="true" />
+                            
+                              <Spinner
+                                android:id="@+id/spFan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBaseline="@+id/textView3"
+                                android:layout_alignParentRight="true" />
+
+                              
+                              
+                                <Spinner
+                                android:id="@+id/spLight"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBaseline="@+id/textView4"
+                                android:layout_alignParentRight="true" />
+                            
+                              <Spinner
+                                android:id="@+id/spDim"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBaseline="@+id/textView2"
+                                android:layout_alignParentRight="true" />
+                              
+                              
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="23dp"
+                                android:text="Auto fan control"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/WhiteFG" />
 
                             <TextView
                                 android:id="@+id/textView1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentLeft="true"
-                                android:layout_below="@+id/switch1"
-                                android:layout_marginTop="16dp"
+                                android:layout_below="@+id/textView3"
+                                android:layout_marginTop="28dp"
                                 android:text="Speed"
                                 android:textAppearance="?android:attr/textAppearanceMedium"
                                 android:textColor="@color/WhiteFG" />
 
-                            <SeekBar
-                                android:id="@+id/SeekBar01"
-                                style="@style/android:Widget.SeekBar"
+                            <TextView
+                                android:id="@+id/textView4"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignBottom="@+id/textView1"
-                                android:layout_alignParentRight="true"
-                                android:minWidth="150dp"
-                                android:progress="60" />
-
-                            <Switch
-                                android:id="@+id/switch2"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_above="@+id/seekBar1"
                                 android:layout_alignParentLeft="true"
-                                android:layout_alignParentRight="true"
-                                android:layout_marginBottom="28dp"
-                                android:text="Lights dimmer"
+                                android:layout_below="@+id/textView1"
+                                android:layout_marginTop="55dp"
+                                android:text="Light dimmer"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
                                 android:textColor="@color/WhiteFG" />
 
                             <TextView
                                 android:id="@+id/textView2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignBottom="@+id/seekBar1"
                                 android:layout_alignParentLeft="true"
+                                android:layout_below="@+id/textView4"
+                                android:layout_marginTop="31dp"
                                 android:text="Dim adjust"
                                 android:textAppearance="?android:attr/textAppearanceMedium"
-                                android:textColor="@color/WhiteFG" />
-
-                            <Switch
-                                android:id="@+id/switch1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentLeft="true"
-                                android:layout_alignParentRight="true"
-                                android:layout_alignParentTop="true"
-                                android:layout_marginTop="28dp"
-                                android:text="Auto fan control"
                                 android:textColor="@color/WhiteFG" />
 
                         </RelativeLayout>
