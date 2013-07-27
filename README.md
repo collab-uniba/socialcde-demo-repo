@@ -1,4 +1,4 @@
 socialcde-demo-repo
 ===================
 
-Fake repository for running SocialCDE demos
+Fake repository for running SocialCDE demos.
